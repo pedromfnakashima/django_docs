@@ -1,3 +1,19 @@
 {
-  "git.ignoreLimitWarning": true
+  "git.ignoreLimitWarning": true,
+
+  "git.enabled": false,
+  "files.exclude": {
+    "env": true,
+    ".vscode": true,
+    "**/__pycache__": true,
+    "**/__init__.py": true,
+    "**/migrations": true,
+    "**/*.sqlite3": true,
+    "**/tests.py": true,
+    "**/wsgi.py": true,
+    "**/asgi.py": true,
+    ".gitignore": true,
+    "requirements.txt": true,
+
+  }
 }
