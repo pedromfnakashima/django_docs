@@ -2,6 +2,8 @@ from django.urls import path
 
 from . import views
 
+# Namespace (para identificar o 'name' do path() quando houver múltiplos apps, e eventualmente houver path() com mesmo nome). Agora, a URL, ao invés de ser chamada por >>> url 'detail' <<<, deverá ser chamada por >>> url 'polls:detail' <<<
+app_name = 'polls'
 urlpatterns = [
     # ex: /polls/
     path('', views.index, name='index'),
